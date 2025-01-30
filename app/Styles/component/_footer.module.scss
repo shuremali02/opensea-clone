@@ -1,0 +1,93 @@
+.footer {
+    background-color: #0057b7; // Adjust the blue shade as per your design
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 20px;
+      text-align: start;
+  
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  
+    .section {
+      flex: 1;
+      min-width: 250px;
+  
+      h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+  
+      p {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+  
+      .signup {
+        display: flex;
+        gap: 10px;
+  
+        input {
+          flex: 1;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+        }
+  
+        button {
+          padding: 10px 15px;
+          background-color: #0066cc;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: #004999;
+          }
+        }
+      }
+  
+      .icons {
+        display: flex;
+        gap: 15px;
+        font-size: 24px;
+  
+        svg {
+          cursor: pointer;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #ffcc00;
+          }
+        }
+      }
+  
+      .supportButton {
+        padding: 10px 20px;
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #004999;
+        }
+      }
+    }
+  }
+  
