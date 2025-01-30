@@ -1,4 +1,16 @@
+
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images:{
+        domains:[
+            "res.cloudinary.com"
+        ]
+    },
+    sassOptions: {
+        includePaths: ['./styles'],
+        additionalData: `@import "variables.scss";`
+      }
+};
 
 export default nextConfig;
