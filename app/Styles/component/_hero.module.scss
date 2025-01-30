@@ -1,0 +1,116 @@
+.heroSection {
+    margin: 1.5rem;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 1rem;
+  
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+    }
+  
+    .imageContainer {
+      flex: 1;
+      text-align: center;
+  
+      .image {
+        max-width: 100%;
+        border-radius: 1rem;
+      }
+    }
+  
+    .content {
+      flex: 1;
+      text-align: center;
+  
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+  
+      .title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+  
+      .description {
+        margin-bottom: 1rem;
+        color: #555;
+      }
+  
+      .inputContainer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+  
+        .inputWrapper {
+          flex: 1;
+          margin-right: 1rem;
+  
+          .label {
+            display: block;
+            font-size: 0.875rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+          }
+  
+          .input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+          }
+        }
+  
+        .primaryButton {
+          padding: 0.75rem 1.5rem;
+          background-color: #6366f1;
+          color: white;
+          border: none;
+          border-radius: 0.5rem;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #4f46e5;
+          }
+        }
+      }
+  
+      .note {
+        font-size: 0.875rem;
+        color: #999;
+      }
+  
+      .buttonsContainer {
+        display: flex;
+        gap: 1rem;
+  
+        .secondaryButton {
+          display: flex;
+          align-items: center;
+          padding: 0.5rem 1rem;
+          background: #f1f1f1;
+          border-radius: 0.5rem;
+          border: none;
+  
+          &:hover {
+            background: #e2e2e2;
+          }
+  
+          .icon {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+  
