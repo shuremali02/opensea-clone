@@ -19,20 +19,6 @@ export default function Hero() {
             Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid
             swag typewriter affogato, hella selvage wolf narwhal dreamcatcher.
           </p>
-          <div className={styles.inputContainer}>
-            <div className={styles.inputWrapper}>
-              <label htmlFor="hero-field" className={styles.label}>
-                Placeholder
-              </label>
-              <input
-                type="text"
-                id="hero-field"
-                name="hero-field"
-                className={styles.input}
-              />
-            </div>
-            <button className={styles.primaryButton}>Button</button>
-          </div>
           <p className={styles.note}>
             Neutra shabby chic ramps, viral fixie.
           </p>
