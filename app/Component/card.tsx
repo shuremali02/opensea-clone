@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { nftData } from "../NFT/page";
+import { nftData } from "../drops/page";
 import Image from "next/image";
 export default function NftCard () {
     return (

@@ -15,18 +15,19 @@ const Navbar = () => {
       <div className={Styles.container}>
         {/* Logo Section */}
         <div className={Styles.logo}>
+          <Link href={"/"}>
           <Image src="https://res.cloudinary.com/dd4xvwf8d/image/upload/v1738131782/opensea_logo_cq768y.png"
            alt="OpenSea Logo" 
            width={120}
             height={50} 
             className={Styles.logo} />
-          
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <div className={Styles.desktopnav}>
           <div className={Styles.links}>
-            <Link href="#" className={Styles.link}>Drops</Link>
+            <Link href="/drops" className={Styles.link}>Drops</Link>
             <Link href="#" className={Styles.link}>Stats</Link>
             <Link href="#" className={Styles.link}>Create</Link>
           </div>
@@ -67,9 +68,9 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className={Styles.mobilemenu}>
-          <Link href="#" className={Styles.mobilelinks}>Drops</Link>
-          <Link href="#" className={Styles.mobilelinks}>Stats</Link>
-          <Link href="#" className={Styles.mobilelinks}>Create</Link>
+          <Link href="/drops" className={Styles.mobilelinks}  onClick={() => setIsOpen(!isOpen)}>Drops</Link>
+          <Link href="#" className={Styles.mobilelinks}  onClick={() => setIsOpen(!isOpen)}>Stats</Link>
+          <Link href="#" className={Styles.mobilelinks}  onClick={() => setIsOpen(!isOpen)}>Create</Link>
         </div>
       )}
     </nav>
