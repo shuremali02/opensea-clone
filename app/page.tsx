@@ -1,12 +1,12 @@
 import React from 'react'
 import Hero from './Component/hero'
-import Nft from './drops/page'
+import HomePageNFT from './Component/homePageNFT'
 
 export default function HomePage() {
   return (
     <div>
       <Hero />
-      <Nft/>
+      <HomePageNFT/>
     </div>
   )
 }
