@@ -1,93 +1,121 @@
 .footer {
-    background-color: #0057b7; // Adjust the blue shade as per your design
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-  
-    .container {
+  background-color: #0057b7;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    text-align: start;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .section {
+    flex: 1;
+    min-width: 250px;
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .signup {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      max-width: 1200px;
-      margin: 0 auto;
-      gap: 20px;
-      text-align: start;
-  
+      gap: 10px;
+
       @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
       }
-    }
-  
-    .section {
-      flex: 1;
-      min-width: 250px;
-  
-      h3 {
-        margin-bottom: 10px;
-        font-size: 18px;
+
+      input {
+        flex: 1;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 300px;
       }
-  
-      p {
-        margin-bottom: 20px;
-        font-size: 14px;
-        line-height: 1.5;
-      }
-  
-      .signup {
-        display: flex;
-        gap: 10px;
-  
-        input {
-          flex: 1;
-          padding: 10px;
-          border: none;
-          border-radius: 5px;
-        }
-  
-        button {
-          padding: 10px 15px;
-          background-color: #0066cc;
-          color: white;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          transition: background-color 0.3s;
-  
-          &:hover {
-            background-color: #004999;
-          }
-        }
-      }
-  
-      .icons {
-        display: flex;
-        gap: 15px;
-        font-size: 24px;
-  
-        svg {
-          cursor: pointer;
-          transition: color 0.3s;
-  
-          &:hover {
-            color: #ffcc00;
-          }
-        }
-      }
-  
-      .supportButton {
-        padding: 10px 20px;
-        background-color: #0066cc;
-        color: white;
+
+      button {
+        padding: 12px 15px;
+        background-color: #ffcc00;
+        color: black;
+        font-weight: bold;
         border: none;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s;
-  
+
         &:hover {
-          background-color: #004999;
+          background-color: #e6b800;
         }
       }
     }
+
+    .icons {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      font-size: 24px;
+
+      svg {
+        cursor: pointer;
+        transition: transform 0.3s, color 0.3s;
+
+        &:hover {
+          transform: scale(1.1);
+          color: #ffcc00;
+        }
+      }
+    }
+
+    .supportButton {
+      padding: 12px 20px;
+      background-color: #ffcc00;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #e6b800;
+      }
+    }
+
+    // Center "Join the Community" or "Need Help" text on mobile
+    &.community,
+    &.help {
+      text-align: start;
+
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
   }
-  
+
+  // Add spacing for better readability on mobile
+  @media (max-width: 768px) {
+    padding: 30px 15px;
+  }
+}

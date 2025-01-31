@@ -4,7 +4,9 @@
 const nextConfig = {
     images:{
         domains:[
-            "res.cloudinary.com"
+            "res.cloudinary.com",
+            "pixelplex.io",
+            "www.singlegrain.com"
         ]
     },
     sassOptions: {

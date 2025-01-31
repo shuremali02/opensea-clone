@@ -43,10 +43,11 @@ const Navbar = () => {
         </div>
 
         {/* Right Section */}
+       
+        <div className={Styles.actions}>
         <div>
           <button className={Styles.loginbtn}><SiSimplelogin size={24}/> login</button>
         </div>
-        <div className={Styles.actions}>
           <button className={Styles.mobicon} ><TfiSearch size={24}/></button>
           <button className={Styles.actionbtn}>
             <FiUser size={24} />
