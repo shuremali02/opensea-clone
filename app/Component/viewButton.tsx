@@ -1,11 +1,14 @@
+"use client"
 import React from 'react';
-import '../Styles/component/_viewButton.module.scss';
+import styles from  '../Styles/component/_viewButton.module.scss';
+import { useRouter } from 'next/navigation';
 
-const ViewButton = () => {
+const ViewButton = ({href, text}:{href?:string, text:string}) => {
+    const router = useRouter()
   return (
-    <div className="styled-wrapper">
-      <button>
-        Hover me
+    <div className={styles.styledwrapper}>
+      <button onClick={()=>{router.push(href || "")}}>
+     {text}
       </button>
     </div>
   );

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 interface CardType {image:string, title:string, totalVolume:number,tokenNumber:number,floorPrice:number,category:string}
-export default function NftCard ({image, title, totalVolume,tokenNumber,floorPrice}:CardType) {
+export default function NftCard ({image, title, totalVolume,tokenNumber,floorPrice, category}:CardType) {
     return (
       <div>
           <motion.div
@@ -26,8 +26,9 @@ export default function NftCard ({image, title, totalVolume,tokenNumber,floorPri
                   <p className="text-sm text-gray-600 text-start">Floor: {floorPrice} ETH</p>
                   <p className="text-sm text-gray-600 text-start">Token: {tokenNumber}</p>
                   </div>
-                  <div >
+                  <div className="flex justify-between">
                   <p className="text-sm text-gray-600 text-start">Volume: {totalVolume} ETH</p>
+                  <p className="text-sm text-gray-600 text-start"> {category}</p>
                   </div>
                 </div>
                
