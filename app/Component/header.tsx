@@ -68,9 +68,9 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className={Styles.mobilemenu}>
-          <Link href="/drops" className={Styles.mobilelinks}  onClick={() => setIsOpen(!isOpen)}>Drops</Link>
-          <Link href="#" className={Styles.mobilelinks}  onClick={() => setIsOpen(!isOpen)}>Stats</Link>
-          <Link href="#" className={Styles.mobilelinks}  onClick={() => setIsOpen(!isOpen)}>Create</Link>
+          <Link href="/drops" className={Styles.mobilelinks} onClick={() => setIsOpen(!isOpen)}>Drops</Link>
+          <Link href="#" className={Styles.mobilelinks} onClick={() => setIsOpen(!isOpen)}>Stats</Link>
+          <Link href="#" className={Styles.mobilelinks} onClick={() => setIsOpen(!isOpen)}>Create</Link>
         </div>
       )}
     </nav>
