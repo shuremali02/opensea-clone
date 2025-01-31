@@ -5,6 +5,7 @@ import { SiSimplelogin } from "react-icons/si";
 import { TfiSearch } from "react-icons/tfi";
 import Styles from "@/app/Styles/component/_header.module.scss"; 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,9 +26,9 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className={Styles.desktopnav}>
           <div className={Styles.links}>
-            <a href="#" className={Styles.link}>Drops</a>
-            <a href="#" className={Styles.link}>Stats</a>
-            <a href="#" className={Styles.link}>Create</a>
+            <Link href="#" className={Styles.link}>Drops</Link>
+            <Link href="#" className={Styles.link}>Stats</Link>
+            <Link href="#" className={Styles.link}>Create</Link>
           </div>
 
           {/* Search Bar */}
@@ -65,9 +66,9 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className={Styles.mobilemenu}>
-          <a href="#" className={Styles.mobilelinks}>Drops</a>
-          <a href="#" className={Styles.mobilelinks}>Stats</a>
-          <a href="#" className={Styles.mobilelinks}>Create</a>
+          <Link href="#" className={Styles.mobilelinks}>Drops</Link>
+          <Link href="#" className={Styles.mobilelinks}>Stats</Link>
+          <Link href="#" className={Styles.mobilelinks}>Create</Link>
         </div>
       )}
     </nav>

@@ -101,20 +101,21 @@
   }
 .loginbtn{
   border: none;
-  border-radius: 16px;
+  border-radius: 8px;
   background-color: #f6f0f0;
   color: $textcolor;
-  padding:12px;
+  padding: 12px;
   display: flex;
   margin-right: 16px;
   gap: 8px;
   padding-right: 12px;
   cursor: pointer;
+   @media (min-width: 786px ) {
+    display: block;
+  }
+  
  
   
-  &:hover {
-    color: $primarycolor;
-  }
   
 }
 

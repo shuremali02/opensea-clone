@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from '../Styles/component/_hero.module.scss';
 
 export default function Hero() {
@@ -5,10 +6,12 @@ export default function Hero() {
     <section className={styles.heroSection}>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
-          <img
+          <Image
             className={styles.image}
             alt="hero"
-            src="https://pixelplex.io/wp-content/uploads/2022/02/how-to-create-an-nft-marketplace-main-1600-1.jpg"
+            src="https://res.cloudinary.com/dd4xvwf8d/image/upload/v1738307950/gc_vvzs3r.avif"
+          width={760}
+          height={600}
           />
         </div>
         <div className={styles.content}>
