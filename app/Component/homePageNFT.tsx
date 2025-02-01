@@ -14,7 +14,7 @@ function HomePageNFT() {
               </div>
                 <div className='flex flex-col '>
                     <h1 className=' p-4 text-3xl font-bold flex justify-center'>By Category</h1>
-                    <div className='flex gap-3'>
+                    <div className='flex gap-3 flex-col md:flex-row'>
                         <ViewButton  text={'Gaming'}  />
                         <ViewButton  text={'Meta'}  />
                         <ViewButton  text={'Top'}  />
