@@ -6,6 +6,7 @@ import NftCard from "../Component/card";
 import Link from "next/link";
 
 
+
 export default function Nft() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8; // Items per page
@@ -29,7 +30,7 @@ export default function Nft() {
       </div>
       <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
         {currentItems?.map((item, index) => (
-        <Link href={`/drops/${item.tokenNumber}`}> <NftCard key={index} {...item} /></Link>
+        <Link key={index} href={`/drops/${item.tokenNumber}`}> <NftCard key={index} {...item} /></Link>
         ))}
       </div>
 

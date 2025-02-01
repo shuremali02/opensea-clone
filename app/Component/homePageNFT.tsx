@@ -33,4 +33,4 @@ function HomePageNFT() {
   )
 }
 
-export default HomePageNFT
+export default HomePageNFT;
