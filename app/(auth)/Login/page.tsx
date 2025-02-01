@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import Styles from "@/app/Styles/Pages/_login.module.scss";
+import Styles from "../../Styles/Pages/_login.module.scss";
 import { useRouter } from 'next/navigation';
 
 export default function LoginPage() {

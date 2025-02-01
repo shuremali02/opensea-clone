@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import Styles from "@/app/Styles/Component/_verify.module.scss";
+import Styles from "../../Styles/Component/_verify.module.scss";
 import { useRouter } from 'next/navigation';
 
 export default function Verify() {

@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import Styles from "@/app/Styles/Pages/_signup.module.scss";
+import Styles from "../../Styles/Pages/_signup.module.scss";
 import {  FaFacebook, FaGoogle, FaTwitter } from "react-icons/fa";
 
 import { useRouter } from 'next/navigation';

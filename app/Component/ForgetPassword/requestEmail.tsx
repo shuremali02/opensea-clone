@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import Styles from "@/app/Styles/Component/_request.module.scss";
+import Styles from "../../Styles/Component/_request.module.scss";
 import { useRouter } from 'next/navigation';
 export default function Request() {
     const router =useRouter()
