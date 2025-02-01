@@ -2,6 +2,7 @@ import { nftData } from '@/lib/data'
 import React from 'react'
 import NftCard from './card'
 import ViewButton from './viewButton'
+import Link from 'next/link'
 
 function HomePageNFT() {
 
@@ -14,7 +15,7 @@ function HomePageNFT() {
               </div>
                 <div className='flex flex-col '>
                     <h1 className=' p-4 text-3xl font-bold flex justify-center'>By Category</h1>
-                    <div className='flex gap-3'>
+                    <div className='flex flex-col md:flex-row gap-3'>
                         <ViewButton  text={'Gaming'}  />
                         <ViewButton  text={'Meta'}  />
                         <ViewButton  text={'Top'}  />
@@ -22,7 +23,7 @@ function HomePageNFT() {
                 </div>
               <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
                 {nftData?.map((item, index) => (
-                  <NftCard key={index} {...item} />
+                    <Link key={index} href={`/drops/${item.tokenNumber}`}><NftCard key={index} {...item} /> </Link>   
                 ))}
               </div>
                 <div>
