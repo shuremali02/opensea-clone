@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { nftData } from '@/lib/data';
 
 export default function TokenId({ params,}: {params: { id:string};

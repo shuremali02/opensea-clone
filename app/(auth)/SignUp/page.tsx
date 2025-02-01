@@ -1,13 +1,21 @@
 "use client";
-import Link from 'next/link';
+
 import React from 'react';
 import Styles from "@/app/Styles/Pages/_signup.module.scss";
-import { FaFacebook } from "react-icons/fa";
-import { ImGooglePlus3 } from "react-icons/im";
-import { TiSocialTwitterCircular } from "react-icons/ti";
+import {  FaFacebook, FaGoogle, FaTwitter } from "react-icons/fa";
+
 import { useRouter } from 'next/navigation';
+import Button, { Type } from "@/app/Component/button";
 
 export default function SignUpPage() {
+  const buttons:Type[]=[
+
+      {text:"Twitter",icon:<FaTwitter  className={Styles.icon2} size={28}/> as unknown as string},
+      {text:"Facebook",icon:<FaFacebook className={Styles.icon1} size={28}/> as unknown as string},
+      {text:"Google",icon:<FaGoogle className={Styles.icon3} size={28} /> as unknown as string},
+
+     
+    ]
     const router =useRouter()
     
     const handleClick = () => {
@@ -28,7 +36,7 @@ export default function SignUpPage() {
           <button className={Styles.button}>Sign up</button>
         </div>
         <p>Or</p>
-        <div className={Styles.icons}>
+        {/* <div className={Styles.icons}>
           <Link href="">
           <button className={Styles.iconsbutton}><FaFacebook className={Styles.icon1} size={24}/>Facebook</button>
           </Link>
@@ -38,7 +46,13 @@ export default function SignUpPage() {
           <Link href="">
           <button className={Styles.iconsbutton}><ImGooglePlus3 className={Styles.icon3} size={24}/> Google</button>
           </Link>
-        </div>
+        </div> */}
+        <h3>Join the community</h3>
+          <div className={Styles.icons}>
+            {buttons.map((button,index)=>(
+              <Button key={index} {...button}/>
+            ))}
+          </div>
         <div className={Styles.button2}>
         <p>already have an account  ?</p>{"  "};
         <button onClick={handleClick} className={Styles.button3}> Login</button>  

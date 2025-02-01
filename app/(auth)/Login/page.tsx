@@ -1,5 +1,4 @@
 "use client";
-;
 import React from 'react';
 import Styles from "@/app/Styles/Pages/_login.module.scss";
 import { useRouter } from 'next/navigation';

@@ -1,8 +1,8 @@
-import { nftData } from '@/lib/data'
-import React from 'react'
-import NftCard from './card'
-import ViewButton from './viewButton'
-import Link from 'next/link'
+import { nftData } from '@/lib/data';
+import React from 'react';
+import NftCard from './card';
+import ViewButton from './viewButton';
+import Link from 'next/link';
 
 function HomePageNFT() {
 

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from 'react';
 import styles from  '../Styles/component/_viewButton.module.scss';
 import { useRouter } from 'next/navigation';

@@ -1,4 +1,4 @@
-@import "./variables";
+@import "/app/Styles/base/variables";
 .navbar {
   position:sticky;
   top: 0;
@@ -108,7 +108,7 @@
   border-radius: 8px;
   background-color: #f6f0f0;
   color: $textcolor;
-  padding: 12px;
+  padding: 8px;
   display: flex;
   margin-right: 8px;
   gap: 8px;
