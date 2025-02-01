@@ -1,0 +1,18 @@
+$button:
+ align-items: center;
+  background:$bgcolor;
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 16px;
+
+
+    &:hover{
+      opacity: 0.9;
+
+    }

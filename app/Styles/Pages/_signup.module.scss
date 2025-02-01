@@ -1,0 +1,99 @@
+// SCSS Code for the Login Form 
+@import "/app/Styles/base/color";
+@import "/app/Styles/base/mixins";
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: $bgcolor;
+  
+     .signupform{
+    @include form;     
+     
+  .h1{
+ @include h1
+  
+  }
+  .label{
+@include label1
+  }
+  .input {
+    @include input
+     }
+     p {
+      text-align: end;
+      font-size: 0.9rem;
+      color: #6a11cb;
+      cursor: pointer;
+      margin: 1rem 0;
+  
+      &:hover {
+        text-decoration: underline;
+      } 
+    }
+    .button{
+    @include button
+    }
+    .icons{
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin: 16px;
+      flex-direction: column;
+     
+      
+    }
+    .iconsbutton {
+      display: flex; /* Flexbox use karein */
+      align-items: center; /* Vertical alignment */
+      background: #fff;
+      width: 100%;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      padding: 12px;
+      font-size: 16px;
+      text-align: left; /* Text left-align */
+      cursor: pointer;
+      gap: 10px; /* Icon aur text ke beech ka gap */
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Thoda shadow effect */
+   
+    
+    &:hover {
+      background: #f5f5f5; /* Hover effect */
+    }
+  }
+    .icon1 {
+      color: #227;
+      font-size: 24px; /* Icon size */
+    }
+    
+    .icon2 {
+      color: #2575fc;
+      font-size: 24px; /* Icon size */
+    }
+    
+    .icon3 {
+      color: red;
+      font-size: 24px; /* Icon size */
+    }
+    
+    .p2{
+      padding-top: 48px;
+    }
+    
+    .button2{
+      display: flex;
+      flex-direction: row;
+    }
+    .button3{
+      background: transparent;
+      border: none;
+      &:hover{
+        color: #6a11cb;
+      }
+  
+    }
+    
+     }}

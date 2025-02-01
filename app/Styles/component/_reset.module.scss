@@ -1,0 +1,34 @@
+// SCSS Code for the Login Form
+@import "/app/Styles/base/color";
+@import "/app/Styles/base/mixins";
+
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: $bgcolor;
+  
+     .resetform{
+      @include form;
+     
+  .h1{
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: #333;
+    padding: 24px;
+  
+  }
+  .label{
+ @include label1
+  }
+  .input {
+    @include input
+     }
+   
+    .button{
+     @include button
+    }
+    
+    
+     }}

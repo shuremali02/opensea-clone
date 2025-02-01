@@ -1,0 +1,69 @@
+// SCSS Code for the Login Form
+@import "/app/Styles/base/color";
+@import "/app/Styles/base/mixins";
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: $bgcolor;
+  
+     .verifyform{
+     @include form;
+  .h1{
+    @include h1
+  
+  }
+  .label{
+  font-size: 18px;
+  color: #555;
+  padding-bottom: 16px;
+  text-align: center;
+  font:bold;
+
+  }
+
+  .inputrow {
+    display: flex; /* Input fields ko ek row me display karne ke liye */
+    gap: 16px; /* Fields ke beech spacing */
+    margin-bottom: 16px;
+    width: 100%; /* Row full width le */
+    justify-content: center;
+  }
+  .input {
+    background-color: rgb(228, 228, 228);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    caret-color: rgb(127, 129, 255);
+    color: rgb(44, 44, 44);
+    outline: none;
+    font-weight: 600;
+    flex-direction: row;
+    display: flex
+    }
+
+    
+    }
+    .button{
+      @include button
+    }
+    
+    .button2{
+      background: transparent;
+      color: #6a11cb;
+      border: none;
+      padding: 12px; 
+      &:hover{
+        color: red;
+      }
+  
+    }
+    .p2{
+      display: flex;
+      padding-top: 32px;
+    }
+    
+     }
