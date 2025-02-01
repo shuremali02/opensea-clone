@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from '../Styles/component/_hero.module.scss';
+import typewritter from "@/app/Styles/component/_typewritter.module.scss"
 
 export default function Hero() {
   return (
@@ -16,7 +17,7 @@ export default function Hero() {
         </div>
         <div className={styles.content}>
           <h1 className={styles.title}>
-            Knausgaard typewriter readymade marfa
+          <div className={typewritter.typewriter}>Knausgaard typewriter readymade marfa</div> 
           </h1>
           <p className={styles.description}>
             Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid
