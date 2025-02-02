@@ -1,0 +1,114 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+  
+    .content {
+     background-color: rgba(255, 255, 255, 0.1);
+      width: 100%;
+      max-width: 1200px;
+  
+      .imageWrapper {
+        width: 100%;
+        
+        text-align: center;
+  
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+  
+      .detailsWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+  
+        @media (min-width: 768px) {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+  
+        .details {
+          flex: 1;
+          ;
+          padding: 1.5rem;
+         
+          text-align: left;
+  
+          h1 {
+            font-size: 2rem;
+            color: #ffcc00; // Highlight color
+            margin-bottom: 1rem;
+          }
+  
+          p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #ddd;
+  
+            &.tokenId {
+              font-weight: bold;
+              color: #183541;
+            }
+  
+            &.creator {
+              font-weight: bold;
+              color: #66ffcc;
+            }
+  
+            &.floorPrice {
+              font-weight: bold;
+              color: #00ccff;
+            }
+  
+            &.totalVolume {
+              font-weight: bold;
+              color: #ff6699;
+            }
+          }
+        }
+  
+        .timer {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+  
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: #ff5555;
+  
+          .buyButton {
+            background: #ffcc00;
+            color: #111;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.5);
+            transition: background 0.3s;
+  
+            &:hover {
+              background: #ffaa00;
+            }
+          }
+        }
+      }
+    }
+  
+    .notFound {
+      color: #ff5555;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 2rem;
+      background: rgba(255, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+  }
+  

@@ -1,5 +1,6 @@
 export const nftData = [
   {
+    mintedOn:"30 Sep 2024",
     title: "Azuki Elementals",
     floorPrice: 0.30,
     totalVolume: 65,
@@ -11,6 +12,7 @@ export const nftData = [
     description: "A collection of Azuki-themed NFTs inspired by elemental forces, offering unique traits, rarity levels, and exclusive perks for holders. These digital assets showcase stunning artistry and deep lore tied to the Azuki universe, making them highly sought after by collectors."
   },
   {
+    mintedOn:"30 Sep 2024",
     title: "Parallel Avatars",
     floorPrice: 0.65,
     totalVolume: 7640,
@@ -22,6 +24,7 @@ export const nftData = [
     description: "A futuristic avatar NFT collection designed for the Parallel Universe, enhancing digital identity. Each avatar is crafted with unique sci-fi aesthetics, enabling users to represent themselves in the metaverse with exclusive attributes and benefits."
   },
   {
+    mintedOn:"30 Sep 2024",
     title: "The Ancients of Hol...",
     floorPrice: 0.04,
     totalVolume: 16,
@@ -33,6 +36,7 @@ export const nftData = [
     description: "An exclusive collection of ancient-themed NFTs showcasing mythical and legendary figures. These NFTs depict legendary heroes, gods, and creatures with intricate designs and deep-rooted histories, making them a must-have for mythology enthusiasts."
   },
   {
+    mintedOn:"30 Sep 2024",
     title: "Footium Players",
     floorPrice: 0.01,
     totalVolume: 364,
@@ -44,6 +48,7 @@ export const nftData = [
     description: "Digital player cards for the Footium football management game, each with unique stats and abilities. These NFTs offer interactive gameplay opportunities, allowing users to build and manage their dream football teams within the Footium ecosystem."
   },
   {
+    mintedOn:"30 Sep 2024",
     title: "OCH Genesis Ring",
     floorPrice: 1.95,
     totalVolume: 3.328,
@@ -66,6 +71,7 @@ export const nftData = [
     description: "A collection of apes with unique traits and rarity levels, designed for gaming enthusiasts. Each NFT brings a distinct personality and backstory, adding depth to the virtual world."
   },
   {
+    mintedOn:"30 Sep 2024",
     title: "Mutant Hound Collars",
     floorPrice: 0.98,
     totalVolume: 11,
@@ -77,6 +83,7 @@ export const nftData = [
     description: "An NFT collection linked to the Mutant Hound universe, offering in-game bonuses and collectibles. Owners gain access to rare items and special events within the gaming ecosystem."
   },
   {
+    mintedOn:"30 Sep 2024",
     title: "Doodles",
     floorPrice: 2.50,
     totalVolume: 150,
@@ -88,6 +95,7 @@ export const nftData = [
     description: "A colorful and creative NFT collection featuring hand-drawn characters with playful themes. Each NFT showcases unique art styles and exclusive collaborations with renowned designers."
   },
   {
+    mintedOn:"30 Sep 2024",
     title: "CloneX",
     floorPrice: 1.75,
     totalVolume: 78,
@@ -99,6 +107,7 @@ export const nftData = [
     description: "A high-tech avatar collection designed for the metaverse, created in collaboration with RTFKT. These digital beings offer customizable traits and premium wearables for a futuristic online presence."
   },
   {
+    mintedOn:"30 Sep 2024",
     title: "Moonbirds",
     floorPrice: 1.10,
     totalVolume: 90,
@@ -110,6 +119,7 @@ export const nftData = [
     description: "A pixel-art owl-themed NFT collection that unlocks community-driven perks and rewards. Owners gain access to exclusive events, a private community, and potential future airdrops."
   },
   {
+    mintedOn:"30 Sep 2024",
     title: "Cool Cats",
     floorPrice: 0.89,
     totalVolume: 55,
@@ -121,6 +131,7 @@ export const nftData = [
     description: "A family-friendly NFT collection of unique, randomly generated cartoon cats with cool traits. These NFTs are beloved for their adorable designs and engaging community-driven initiatives."
   },
   {
+    mintedOn:"30 Sep 2024",
     title: "Pudgy Penguins",
     floorPrice: 3.40,
     totalVolume: 43,

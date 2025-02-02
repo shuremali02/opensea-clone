@@ -1,0 +1,51 @@
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.countdown-card {
+  background: #111;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+  text-align: center;
+  width: 280px;
+
+  h2 {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    margin-bottom: 15px;
+  }
+
+  .time-values {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    .time-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #222;
+      padding: 10px;
+      border-radius: 8px;
+      width: 60px;
+      height: 60px;
+
+      span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ffcc00;
+      }
+
+      .label {
+        font-size: 0.8rem;
+        color: #bbb;
+        margin-top: 5px;
+      }
+    }
+  }
+}
