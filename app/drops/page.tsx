@@ -23,11 +23,11 @@ export default function Nft() {
   };
   return (
     <div>
-      <div className="flex items-center justify-center  bg-gray-100">
-        <h1 className="md:text-7xl p-4 text-3xl sm:text-5xl font-bold hover:animate-pulse">
-          TOP NFT&#39;s
-        </h1>
-      </div>
+      <div className="flex items-center justify-center w-full bg-[#3B3B3B]">
+                <h1 className="md:text-7xl text-white  p-4 text-3xl sm:text-5xl font-bold hover:animate-pulse">
+                   NFT&#39;s HUB
+                </h1>
+              </div>
       <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
         {currentItems?.map((item, index) => (
         <Link key={index} href={`/drops/${item.tokenNumber}`}> <NftCard key={index} {...item} /></Link>

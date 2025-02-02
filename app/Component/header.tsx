@@ -15,17 +15,19 @@ const Navbar = () => {
       <div className={Styles.container}>
         {/* Logo Section */}
         <div className={Styles.logo}>
-          <Link href={"/"}>
-          <Image src="https://res.cloudinary.com/dd4xvwf8d/image/upload/v1738131782/opensea_logo_cq768y.png"
+          <Link href={"/"} className='gap-2 flex items-center'>
+          <Image src="https://res.cloudinary.com/db3yy1i0j/image/upload/v1738522965/Storefront_rp1sdb.png"
            alt="OpenSea Logo" 
-           width={130}
-            height={55} 
+           width={40}
+            height={40} 
             className={Styles.logo} />
+
+            <span className='text-white font-serif'>NFT MARKETPLACE</span>
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <div className={Styles.desktopnav}>
+        <div className={`${Styles.desktopnav} px-4`} >
           <div className={Styles.links}>
             <Link href="/drops" className={Styles.link}>Drops</Link>
             <Link href="#" className={Styles.link}>Stats</Link>

@@ -5,30 +5,30 @@ import Image from "next/image";
 interface CardType {image:string, title:string, totalVolume:number,tokenNumber:number,floorPrice:number,category:string}
 export default function NftCard ({image, title, totalVolume,tokenNumber,floorPrice, category}:CardType) {
     return (
-      <div>
+      <div className="bg-[#2B2B2B]">
           <motion.div
             whileHover={{ scale:1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="relative overflow-hidden rounded-2xl shadow-lg"
+            className="relative overflow-hidden rounded shadow-lg "
           >
-            <Card className="h-full">
+            <Card className="h-full bg-[#2B2B2B]">
               <Image
                 src={image}
                 alt={title}
                 width={330}
                 height={302}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover p-1 rounded-t-md"
               />
-              <CardContent className="p-4 bg-white">
-                <CardTitle className="text-lg font-bold mb-2 ">{title}</CardTitle>
+              <CardContent className="p-4 ">
+                <CardTitle className="text-lg text-white font-bold mb-2 ">{title}</CardTitle>
                 <div>
                   <div className="flex justify-between">
-                  <p className="text-sm text-gray-600 text-start">Floor: {floorPrice} ETH</p>
-                  <p className="text-sm text-gray-600 text-start">Token: {tokenNumber}</p>
+                  <p className="text-sm text-[#858584] text-start">Floor: {floorPrice} ETH</p>
+                  <p className="text-sm text-[#858584] text-start">Token: {tokenNumber}</p>
                   </div>
                   <div className="flex justify-between">
-                  <p className="text-sm text-gray-600 text-start">Volume: {totalVolume} ETH</p>
-                  <p className="text-sm text-gray-600 text-start"> {category}</p>
+                  <p className="text-sm text-[#858584] text-start">Volume: {totalVolume} ETH</p>
+                  <p className="text-sm text-[#858584] text-start"> {category}</p>
                   </div>
                 </div>
                

@@ -7,9 +7,9 @@ import Link from 'next/link';
 function HomePageNFT() {
 
   return (
-    <div className='flex  flex-col items-center '>
-        <div className="flex items-center justify-center w-full bg-gray-100">
-                <h1 className="md:text-7xl p-4 text-3xl sm:text-5xl font-bold hover:animate-pulse">
+    <div className='flex  flex-col items-center text-white'>
+        <div className="flex items-center justify-center w-full bg-[#3B3B3B]">
+                <h1 className="md:text-7xl  p-4 text-3xl sm:text-5xl font-bold hover:animate-pulse">
                    NFT&#39;s HUB
                 </h1>
               </div>

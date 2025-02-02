@@ -1,7 +1,8 @@
+@import "/app/Styles/base/variables";
 .footer {
-  background-color: #0057b7;
+  background-color: #3B3B3B;
   color: white;
-  padding: 40px 0px;
+  padding: 40px 20px;
 
   .container {
     display: flex;
@@ -11,13 +12,13 @@
     margin: 0 auto;
     text-align: start;
     flex-wrap: wrap;
-    gap: 500px; // Adds spacing between sections
+    gap: 50px; // Adjust spacing for better responsiveness
 
     @media (max-width: 768px) {
-      flex-direction: column;
+      flex-direction: column; // Column layout only for mobile screens
       align-items: center;
       text-align: center;
-      gap: 30px; // Adjust spacing for mobile
+      gap: 30px;
     }
   }
 
@@ -29,7 +30,12 @@
       margin-bottom: 10px;
       font-size: 18px;
       text-align: left;
+
+      @media (max-width: 769px) {
+          text-align: center;
+      }
     }
+
 
     p {
       margin-bottom: 15px;
@@ -49,7 +55,7 @@
       input {
         flex: 1;
         padding: 12px;
-        border: none;
+        border: 1px solid $Tertiarycolor;
         border-radius: 5px;
         width: 100%;
         max-width: 300px;
@@ -57,7 +63,7 @@
 
       button {
         padding: 12px 15px;
-        background-color: #ffcc00;
+        background-color: $Tertiarycolor;
         color: black;
         font-weight: bold;
         border: none;
@@ -66,7 +72,7 @@
         transition: background-color 0.3s;
 
         &:hover {
-          background-color: #e6b800;
+          background-color: #7e2aeb;
         }
       }
     }
@@ -83,8 +89,7 @@
       margin-top: 20px;
       display: flex;
       gap: 15px;
-      justify-content: flex-start; // Align icons to the right
-   
+      justify-content: flex-start; // Align icons to left
 
       @media (max-width: 768px) {
         justify-content: center;
@@ -94,5 +99,13 @@
 
   @media (max-width: 768px) {
     padding: 30px 15px;
+  }
+
+  // Ensure flex-direction remains row for tablets and above
+  @media (min-width: 769px) {
+    .container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 }

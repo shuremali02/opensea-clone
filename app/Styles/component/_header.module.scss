@@ -4,15 +4,16 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: #3B3B3B;
   border-bottom: 1px solid #e5e8eb;
   z-index: 50;
+  width: 100%;
 
 
   .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 1rem 2.5rem;
+    padding: 1rem 1.75rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,7 +73,7 @@
     
     
     &:hover {
-      color: $primarycolor;
+      color: $Tertiarycolor;
     }
   }
 
@@ -84,6 +85,7 @@
   }
   
   .search {
+    
     position: relative;
     max-width: 600px;
     display: flex;
@@ -98,31 +100,37 @@
     }
   
     .input {
+      background-color: $primary1color;
       width: 100%;
-      padding: 0.75rem 1rem 0.75rem 3rem;
-      border: 2px solid #e5e8eb;
-      border-radius: 0.75rem;
-      background-color: #f8f9fa;
+      padding: 0.5rem 1rem 0.5rem 3rem;
+      border: 1px solid $Tertiarycolor;
+      border-radius: 8px;
+      
       
       &:focus {
         outline: none;
-        border-color: $primarycolor;
-        background-color: white;
+        color: #7e2aeb;
+        
       }
     }
   }
   
 .loginbtn{
-  border: none;
-  border-radius: 8px;
-  background-color: #f6f0f0;
+  border: 1px solid $Tertiarycolor;
+      border-radius: 8px;
+  background-color: $primary1color;
   color: $textcolor;
-  padding: 8px;
+  padding: 0.5rem ;
   display: flex;
   margin-right: 8px;
   gap: 8px;
   padding-right: 12px;
   cursor: pointer;
+  &:focus {
+    outline: none;
+    color: #7e2aeb;
+    
+  }
    @media (min-width: px ) {
     display: block;
   }
@@ -136,14 +144,20 @@
   }
 
   .actionbtn {
-    background: none;
-    border: none;
-    padding: 8px;
+    background: $primary1color;
+    border: 1px solid $Tertiarycolor;
+    border-radius: 8px;
+    padding: 0.5rem ;
     cursor: pointer;
     color: $textcolor;
-    border-radius: 8px;
-    background-color: #f6f0f0;
+  
+    
     display:none;
+    &:focus {
+        outline: none;
+        color: #7e2aeb;
+        
+      }
 
     @media (min-width: 784px ) {
       display: block;

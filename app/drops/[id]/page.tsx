@@ -25,16 +25,17 @@ export default function TokenId({ params }: { params: { id: string } }) {
             src={matchid.image}
             alt={matchid.title}
             width={1280}
-            height={200}
+            height={500}
+            className={styles.nftImage}
           />
         </div>
 
         {/* Main Details */}
         <div className={styles.detailsWrapper}>
-          {/* NFT Details */}
+          {/* Left Details Section */}
           <div className={styles.details}>
             <h1>{matchid.title}</h1>
-            <p>Minted On: {matchid.mintedOn}</p>
+            <p className={styles.date}>Minted On: {matchid.mintedOn}</p>
             <p>
               Token ID: <span className={styles.tokenId}>{matchid.tokenNumber}</span>
             </p>
@@ -44,7 +45,7 @@ export default function TokenId({ params }: { params: { id: string } }) {
             <p className={styles.totalVolume}>Total Volume: {matchid.totalVolume}</p>
           </div>
 
-          {/* Countdown Timer */}
+          {/* Right Countdown Section */}
           <div className={styles.timer}>
             <CountDownTimer />
             <button className={styles.buyButton}>Buy Now</button>

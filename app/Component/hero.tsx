@@ -12,21 +12,32 @@ export default function Hero() {
             alt="hero"
             width={720}
             height={600}
-            src="https://www.singlegrain.com/wp-content/uploads/2022/01/SG-5-Best-NFT-Marketplaces-for-Beginners-in-2022.jpg"
+            src="https://res.cloudinary.com/db3yy1i0j/image/upload/v1738521563/Highlighted_NFT_uaogf9.png"
           />
         </div>
-        <div className={styles.content}>
+          {/* Hero Content */}
+          <div className={styles.content}>
           <h1 className={styles.title}>
-          <div className={typewritter.typewriter}>Knausgaard typewriter readymade marfa</div> 
+            <div className={typewritter.typewriter}>
+              Experience the Next Generation of Digital Art
+            </div>
           </h1>
           <p className={styles.description}>
-            Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid
-            swag typewriter affogato, hella selvage wolf narwhal dreamcatcher.
+            Immerse yourself in a world where creativity meets technology. Our platform showcases a unique collection of NFTs that redefine art and innovation. Whether you're a collector, an enthusiast, or a creator, there's something for everyone.
           </p>
           <p className={styles.note}>
-            Neutra shabby chic ramps, viral fixie.
+            Discover limited-edition digital assets, unlock exclusive benefits, and become a part of a thriving community of visionaries and creators.
           </p>
-          
+
+          {/* Call to Action */}
+          <div className={styles.cta}>
+            <button className={styles.primaryButton}>
+              Explore Collections
+            </button>
+            <button className={styles.secondaryButton}>
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
     </section>
