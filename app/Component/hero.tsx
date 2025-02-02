@@ -10,9 +10,9 @@ export default function Hero() {
           <Image
             className={styles.image}
             alt="hero"
-            width={720}
+            width={600}
             height={600}
-            src="https://res.cloudinary.com/db3yy1i0j/image/upload/v1738521563/Highlighted_NFT_uaogf9.png"
+            src="https://res.cloudinary.com/db3yy1i0j/image/upload/v1738525250/Image_Placeholder_etqgw1.png"
           />
         </div>
           {/* Hero Content */}
