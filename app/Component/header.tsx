@@ -18,8 +18,8 @@ const Navbar = () => {
           <Link href={"/"}>
           <Image src="https://res.cloudinary.com/dd4xvwf8d/image/upload/v1738131782/opensea_logo_cq768y.png"
            alt="OpenSea Logo" 
-           width={120}
-            height={50} 
+           width={130}
+            height={55} 
             className={Styles.logo} />
           </Link>
         </div>
@@ -33,6 +33,7 @@ const Navbar = () => {
           </div>
 
           {/* Search Bar */}
+          <div className={Styles.parentcontainer} >
           <div className={Styles.search}>
             <FiSearch className={Styles.icon} size={20} />
             <input 
@@ -40,6 +41,7 @@ const Navbar = () => {
               placeholder="Search" 
               className={Styles.input}
             />
+          </div>
           </div>
         </div>
 

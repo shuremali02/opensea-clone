@@ -29,11 +29,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${styles.container} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${styles.maincontainer}  antialiased`}
       >
         <div >
         <Navbar />
+        <div className={styles.container}>
         {children}
+        </div>
         <Footer />
         </div>
       </body>

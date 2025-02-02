@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import { nftData } from '@/lib/data';
-import styles from '../../Styles/component/_tokenId.module.scss'; // Import SCSS file
+import styles from '../../Styles/component/_tokenId.module.scss'; 
 import CountDownTimer from '../../Component/count-down';
 
 export default function TokenId({ params }: { params: { id: string } }) {

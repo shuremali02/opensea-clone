@@ -26,7 +26,7 @@ function HomePageNFT() {
                     <Link key={index} href={`/drops/${item.tokenNumber}`}><NftCard key={index} {...item} /> </Link>   
                 ))}
               </div>
-                <div>
+                <div className='py-6'>
                 <ViewButton text={"View More"} href={'/drops'}/>
                 </div>
         

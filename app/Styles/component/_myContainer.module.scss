@@ -22,3 +22,14 @@
       max-width: 300px;
     }
   }
+
+  .maincontainer{
+      width: 100vw;    // Pure viewport ki width le lega
+      max-width: 100%; // Har screen size par full width hoga
+       // Centered rakhnay ke liye
+      height: auto;    // Content ke mutabiq adjust hogi
+      max-height: 100vh; // Kam az kam puri screen ki height cover karega
+    }
+    
+
+    

@@ -31,7 +31,7 @@ const Footer = () => {
 
         {/* Join the community section */}
         <div className={styles.section}>
-          <h3>Join the community</h3>
+          <h3 className={styles.h3}>Join the community</h3>
           <div className={styles.icons}>
             {buttons.map((button,index)=>(
               <Button key={index} {...button}/>
@@ -39,11 +39,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Need help section */}
-        <div className={styles.section}>
-          <h3>Need help?</h3>
-          <button className={styles.supportButton}>Contact Support</button>
-        </div>
+        
       </div>
     </footer>
   );

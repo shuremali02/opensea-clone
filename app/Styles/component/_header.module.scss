@@ -8,10 +8,11 @@
   border-bottom: 1px solid #e5e8eb;
   z-index: 50;
 
+
   .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,8 +32,8 @@
     // }
 
     .img {
-      width: 32px;
-      height: 32px;
+      width: 42px;
+      height: 42px;
       border-radius: 50%;
     }
 
@@ -75,11 +76,19 @@
     }
   }
 
+  .parentcontainer {
+    display: flex;
+    justify-content: flex-end; // Moves the search bar to the right
+    align-items: center;
+    width: 100%;
+  }
+  
   .search {
     position: relative;
-    flex: 1;
     max-width: 600px;
-
+    display: flex;
+    justify-content: flex-end;
+  
     .icon {
       position: absolute;
       left: 1rem;
@@ -87,8 +96,7 @@
       transform: translateY(-50%);
       color: #8a939b;
     }
-    
-    
+  
     .input {
       width: 100%;
       padding: 0.75rem 1rem 0.75rem 3rem;
@@ -103,6 +111,7 @@
       }
     }
   }
+  
 .loginbtn{
   border: none;
   border-radius: 8px;
