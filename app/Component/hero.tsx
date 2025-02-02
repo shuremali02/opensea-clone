@@ -23,7 +23,7 @@ export default function Hero() {
             </div>
           </h1>
           <p className={styles.description}>
-            Immerse yourself in a world where creativity meets technology. Our platform showcases a unique collection of NFTs that redefine art and innovation. Whether you're a collector, an enthusiast, or a creator, there's something for everyone.
+            Immerse yourself in a world where creativity meets technology. Our platform showcases a unique collection of NFTs that redefine art and innovation. Whether you&#39;re a collector, an enthusiast, or a creator, there&#39;s something for everyone.
           </p>
           <p className={styles.note}>
             Discover limited-edition digital assets, unlock exclusive benefits, and become a part of a thriving community of visionaries and creators.
