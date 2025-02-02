@@ -6,11 +6,11 @@ export default function Hero() {
   return (
     <section className={styles.heroSection}>
       <div className={styles.container}>
-        <div className={styles.imageContainer}>
+        <div >
           <Image
-            className={styles.image}
+            
             alt="hero"
-            width={600}
+            width={500}
             height={600}
             src="https://res.cloudinary.com/db3yy1i0j/image/upload/v1738525250/Image_Placeholder_etqgw1.png"
           />
