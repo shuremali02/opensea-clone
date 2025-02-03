@@ -1,22 +1,13 @@
 "use client";
 import React from 'react';
 import Styles from "../../Styles/Pages/_login.module.scss";
-import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { MdOutlineMail } from 'react-icons/md';
 import { TbLockPassword } from 'react-icons/tb';
 import Link from 'next/link';
 
 export default function LoginPage() {
-  const router = useRouter()
 
-  const handleClick = () => {
-    router.push("/SignUp")
-  }
-
-  const root = () => {
-    router.push("/")
-  }
   return (
     <div className={Styles.logincontainer}>
 
@@ -49,7 +40,7 @@ export default function LoginPage() {
 
           </div>
           <Link href={"/ForgetPassword/RequestEmail"}><button className={Styles.forget}>Forgot password?</button></Link>
-          <button onClick={root} className={Styles.button}>LOGIN</button>
+          <Link href={"/"}><button className={Styles.button}>LOGIN</button></Link>
         </form>
         {/* <p>Or </p> */}
         {/* <div className={Styles.icons}>
@@ -60,7 +51,7 @@ export default function LoginPage() {
           <Link className={Styles.icon3} href="https://www.google.com/"><ImGooglePlus3 size={24}/></Link>
         </div> */}<div className={Styles.accountText}>
           <p>dont have an account  ?</p>
-          <button onClick={handleClick} className={Styles.loginLink}> Sign Up</button>
+          <Link href={"/SignUp"}><button className={Styles.loginLink}> Sign Up</button></Link>
         </div>
       </div>
     </div>

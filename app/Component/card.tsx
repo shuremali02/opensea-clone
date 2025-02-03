@@ -11,7 +11,7 @@ export default function NftCard ({image, title, totalVolume,tokenNumber,floorPri
             whileTap={{ scale: 0.95 }}
             className="relative overflow-hidden rounded shadow-lg "
           >
-            <Card className="h-full bg-[#2B2B2B]">
+            <Card className="h-full bg-[#2B2B2B]  border-2 border-[#A259FF] ">
               <Image
                 src={image}
                 alt={title}

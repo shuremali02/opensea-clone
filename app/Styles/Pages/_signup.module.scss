@@ -68,9 +68,11 @@
 
     .icons {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       gap: 12px;
       width: 100%;
+      align-items: center;
+      justify-content: center;
     }
 
     .iconsbutton {

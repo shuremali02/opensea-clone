@@ -1,35 +1,24 @@
-"use client";
+
 import React from "react";
 import Styles from "../../Styles/Pages/_signup.module.scss";
-// import { FaFacebook, FaGoogle, FaTwitter } from "react-icons/fa";
-import { useRouter } from "next/navigation";
+import { FaFacebook, FaGoogle, FaTwitter } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { TbLockPassword } from "react-icons/tb";
 import { GiConfirmed } from "react-icons/gi";
 import Image from "next/image";
+import Button ,{ Type } from "@/app/Component/button";
+import Link from "next/link";
 
 export default function SignUpPage() {
-  const router = useRouter();
+ 
 
-  const handleClick = () => {
-    router.push("/Login");
-  };
-
-  // const buttons = [
-  //   {
-  //     text: "Sign up with Facebook",
-  //     icon: <FaFacebook className={Styles.icon1} size={20} />,
-  //   },
-  //   {
-  //     text: "Sign up with Twitter",
-  //     icon: <FaTwitter className={Styles.icon2} size={20} />,
-  //   },
-  //   {
-  //     text: "Sign up with Google",
-  //     icon: <FaGoogle className={Styles.icon3} size={20} />,
-  //   },
-  // ];
+   const buttons:Type[]=[
+      {text:"Twitter",icon:<FaTwitter size={28} className={Styles.icon2}/> as unknown as string},
+      {text:"Google",icon: <FaGoogle size={28} className={Styles.icon3} /> as unknown as string},
+      {text: "Facebook",icon: <FaFacebook size={28} className={Styles.icon1}/> as unknown as string},
+      
+    ]
 
   return (
     <div className={Styles.maincontainer}>
@@ -95,20 +84,17 @@ export default function SignUpPage() {
 
         <p className={Styles.orText}>Or</p>
 
-        {/* <div>
-          {buttons.map((button, index) => (
-            <button key={index} className={Styles.iconsbutton}>
-              {button.icon}
-          
-            </button>
-          ))}
-        </div> */}
+        <div className={Styles.icons}>
+            {buttons.map((button,index)=>(
+              <Button key={index} {...button}/>
+            ))}
+          </div>
 
         <div className={Styles.accountText}>
           <p>Already have an account?</p>
-          <button className={Styles.loginLink} onClick={handleClick}>
+         <Link href={"/Login"}> <button className={Styles.loginLink}>
             Login
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>
