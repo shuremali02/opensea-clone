@@ -1,85 +1,111 @@
 // SCSS Code for the Login Form/
 @import "/app/Styles/base/variables";
 @import "/app/Styles/base/mixins";
-@import "variables.scss";
-.logincontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background:$bgcolor;
-  
-     .loginform{
-      @include form;
-     
-  .h1{
-   @include h1
-  }
-  .label{
-  font-size: 18px;
-  color: #555;
-  padding-bottom: 16px;
-  text-align: center;
-  font:bold;
 
-  }
-  .input {
-    @include input
-     }
-     p {
+.logincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: $primary1color;
+
+  .loginform {
+    @include form;
+
+    .h1 {
+      @include h1;
+      font-size: 32px;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+
+    .label {
+      @include label;
+
+
+    }
+
+
+
+    p {
       text-align: end;
       font-size: 0.9rem;
       color: #6a11cb;
       cursor: pointer;
       margin: 1rem 0;
-  
+
       &:hover {
         text-decoration: underline;
-      } 
-    }
-    .button{
-    @include button
-    }
-    .button1{
-        background-color: transparent;
-        align-items: center;
-        width: 100%;
-        color:#6a11cb;
-        padding: 12px;
-        font-size: 16px;
-        text-align: center;
-        cursor: pointer;
-        border: none;
-    }
-    .icons{
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      margin: 16px;
-     
-      
-    }
-    .icon1{
-      color:#227;
-    }
-    .icon2{
-      color: #2575fc;
-    }
-    .icon3{
-      color:red;
-      justify-content: center;
-      align-items: center;
-    }
-    .p2{
-      padding-top: 48px;
-    }
-    .button2{
-      background: transparent;
-      border: none;
-      &:hover{
-        color: #6a11cb;
       }
-  
     }
-    
-     }}
+
+    .button {
+      @include button
+    }
+
+
+    .search {
+
+      position: relative;
+      max-width: 900px;
+      display: flex;
+      justify-content: flex-end;
+
+      .icon {
+        position: absolute;
+        left: 1rem;
+        top: 35%;
+        transform: translateY(-50%);
+        color: #8a939b;
+
+      }
+
+
+
+      .input {
+        @include input;
+
+      }
+    }
+
+    .accountText {
+      margin-top: 24px;
+      font-size: 14px;
+      color: #ddd;
+
+      p {
+        display: inline;
+        margin-right: 8px;
+        color: #ddd;
+      }
+
+      .loginLink {
+        color: $Tertiarycolor;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    justify-content: center;
+    padding: 10px;
+
+    .signupform {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+
+    .signupform {
+      margin-top: 20px;
+    }
+  }
+}

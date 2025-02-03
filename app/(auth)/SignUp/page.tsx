@@ -3,6 +3,11 @@ import React from "react";
 import Styles from "../../Styles/Pages/_signup.module.scss";
 // import { FaFacebook, FaGoogle, FaTwitter } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import { FaRegUser } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
+import { TbLockPassword } from "react-icons/tb";
+import { GiConfirmed } from "react-icons/gi";
+import Image from "next/image";
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -30,7 +35,7 @@ export default function SignUpPage() {
     <div className={Styles.maincontainer}>
       {/* Left Section */}
       <div>
-        <img
+        <Image
           src="https://res.cloudinary.com/dd4xvwf8d/image/upload/v1738583470/signup_image_fdkn56.png"
           alt="Sign Up Illustration"
           width={600}
@@ -48,30 +53,40 @@ export default function SignUpPage() {
 
         <form>
           <div className={Styles.label}>
-         
-            <input className={Styles.input} type="text" placeholder="Username" />
- 
-          
-            <input
-              className={Styles.input}
-              type="email"
-              placeholder="Email Address"
-            />
-          
-  
-            <input
-              className={Styles.input}
-              type="password"
-              placeholder="Password"
-            />
-          </div>
-          <div className={Styles.label}>
-          
-            <input
-              className={Styles.input}
-              type="password"
-              placeholder="Confirm Password"
-            />
+
+            <div className={Styles.search}>
+              <FaRegUser className={Styles.icon} size={20} />
+
+              <input className={Styles.input} type="text" placeholder="Username" />
+            </div>
+            <div className={Styles.search}>
+              <MdOutlineMail className={Styles.icon} size={20} />
+              <input
+                className={Styles.input}
+                type="email"
+                placeholder="Email Address"
+              />
+            </div>
+            <div className={Styles.search}>
+              <TbLockPassword className={Styles.icon} size={20} />
+              <input
+                className={Styles.input}
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <div className={Styles.search}>
+              < GiConfirmed className={Styles.icon} size={20} />
+              <div className={Styles.label}>
+
+                <input
+                  className={Styles.input}
+                  type="password"
+                  placeholder="Confirm Password"
+                />
+              </div>
+            </div>
           </div>
           <button type="submit" className={Styles.button}>
             Create account
@@ -91,9 +106,9 @@ export default function SignUpPage() {
 
         <div className={Styles.accountText}>
           <p>Already have an account?</p>
-          <span className={Styles.loginLink} onClick={handleClick}>
+          <button className={Styles.loginLink} onClick={handleClick}>
             Login
-          </span>
+          </button>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ import { useRouter } from 'next/navigation';
 const Navbar = () => {
   const router =useRouter()
     
-  const handleClick = () => {
+  const handleClick1 = () => {
   router.push("/Login")
   }
   const [isOpen, setIsOpen] = useState(false);
@@ -57,7 +57,7 @@ const Navbar = () => {
        
         <div className={Styles.actions}>
         <div>
-          <button onClick={handleClick} className={Styles.loginbtn}><SiSimplelogin size={24}/> login</button>
+          <button onClick={handleClick1} className={Styles.loginbtn}><SiSimplelogin size={24}/> login</button>
         </div>
           <button className={Styles.mobicon} ><TfiSearch size={24}/></button>
           <button className={Styles.actionbtn}>

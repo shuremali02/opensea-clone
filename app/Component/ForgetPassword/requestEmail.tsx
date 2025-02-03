@@ -3,35 +3,54 @@ import React from 'react';
 import Styles from "../../Styles/component/_request.module.scss";
 
 import { useRouter } from 'next/navigation';
+import { MdOutlineMail } from 'react-icons/md';
+import Link from 'next/link';
+import Image from 'next/image';
 export default function Request() {
-    const router =useRouter()
-    
-    const handleClick = () => {
+  const router = useRouter()
+
+  const handleClick = () => {
     router.push("/SignUp")
-    }
-    
-    const ClickLogin = () => {
-        router.push("/Login")
-        }
-        const ClickNewPass = () => {
-            router.push("/ForgetPassword/VerifyOtp")
-            }
+  }
+
+
+  
   return (
     <div className={Styles.logincontainer}>
+      <div>
+        <Image
+          src="https://res.cloudinary.com/dd4xvwf8d/image/upload/v1738583470/signup_image_fdkn56.png"
+          alt="Sign Up Illustration"
+          width={600}
+          height={700}
+        />
+      </div>
       <div className={Styles.loginform}>
         <h1 className={Styles.h1}>Forget Password</h1>
-        <div className={Styles.label}>
-          <label>Enter Email Address</label>
+        <form>
+          <div className={Styles.label}>
+
+
+
+            <div className={Styles.search}>
+              <MdOutlineMail className={Styles.icon} size={20} />
+              <input
+                className={Styles.input}
+                type="email"
+                placeholder="Email Address"
+              />
+            </div>
           </div>
-          <input className={Styles.input} type="text" placeholder="example@gmail.com" />
-          <button onClick={ClickLogin} className={Styles.button1}>Back to login</button>
-        <button onClick={ClickNewPass} className={Styles.button}>Send Otp</button>
 
-        
+          <Link href={"/ForgetPassword/VerifyOtp"}> <button className={Styles.button}>Send Otp</button></Link>
+        </form>
 
-       
-        <p className={Styles.p2}>Dont have an account?</p>
-        <button onClick={handleClick} className={Styles.button2}>SIGN UP</button>
+
+
+        <div className={Styles.accountText} >
+          <p className={Styles.p}>Dont have an account?</p>
+          <button onClick={handleClick} className={Styles.loginLink}>SIGN UP</button>
+        </div>
       </div>
     </div>
   );

@@ -6,32 +6,61 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: $primary1color;
+  padding: 30px;
 
   .loginform {
     @include form;
 
     .h1 {
       @include h1;
+      font-size: 32px;
+      margin-bottom: 8px;
+      color: #fff;
     }
 
     .label {
       @include label1;
+
+      width: 100%;
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 8px;
     }
 
-    .input {
-      @include input;
+    .search {
+
+      position: relative;
+      max-width: 600px;
+      display: flex;
+      justify-content: flex-end;
+
+      .icon {
+        position: absolute;
+        left: 1rem;
+        top: 35%;
+        transform: translateY(-50%);
+        color: #8a939b;
+
+      }
+
+
+
+      .input {
+        @include input;
+
+      }
     }
+
 
     .forget {
       text-align: end;
       border: none;
       background-color: transparent;
       font-size: 0.9rem;
-      color: #6a11cb;
+      color: $Tertiarycolor;
       cursor: pointer;
-      margin: 1rem 0;
+
+
       &:hover {
         text-decoration: underline;
       }
@@ -41,18 +70,44 @@
       @include button;
     }
 
-    .button2 {
-      display: flex;
-      flex-direction: row;
-      gap: 8px;
-      padding: 16px;
+  }
+
+  @media (max-width: 700px) {
+    justify-content: center;
+    padding: 10px;
+
+    .signupform {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+
+    .loginform {
+      margin-top: 20px;
     }
 
-    .button3 {
-      background: transparent;
-      border: none;
+  }
+
+  .accountText {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #ddd;
+
+    p {
+      display: inline;
+      margin-right: 8px;
+    }
+
+    .loginLink {
+      color: $Tertiarycolor;
+      cursor: pointer;
+
       &:hover {
-        color: #6a11cb;
+        text-decoration: underline;
       }
     }
   }

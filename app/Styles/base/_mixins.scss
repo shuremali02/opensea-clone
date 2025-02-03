@@ -3,12 +3,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #6a11cb; // Update to match your button color
+  background: $Tertiarycolor; // Update to match your button color
   width: 100%;
   color: white;
   border: none;
-  border-radius: 16px;
-  padding: 12px;
+  border-radius: 8px;
+  padding: 8px 12px;
   font-size: 16px;
   text-align: center;
   cursor: pointer;
@@ -20,16 +20,20 @@
 }
 
 @mixin input {
+  background-color: $primary1color;
   width: 100%;
-  border: 1px solid #ccc; // Adjusted for clear visuals
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  border: 1px solid $Tertiarycolor;
   border-radius: 8px;
-  padding: 12px;
-  font-size: 16px;
+  background: $secondarycolor;
   margin-bottom: 16px;
+  border: 1px solid $Tertiarycolor;
+
 
   &:focus {
     outline: none;
-    border: 2px solid #6a11cb; // Match design
+    color: #7e2aeb;
+
   }
 }
 
@@ -47,18 +51,20 @@
 @mixin h1 {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: white;
   margin-bottom: 24px;
+
 }
 
 @mixin label {
   font-size: 14px;
   color: #555;
   margin-bottom: 8px;
+
 }
 
-@mixin label1{
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 8px;
+@mixin label1 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
 }

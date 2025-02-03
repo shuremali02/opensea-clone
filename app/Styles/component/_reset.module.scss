@@ -3,32 +3,94 @@
 @import "/app/Styles/base/mixins";
 
 .maincontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: $bgcolor;
-  
-     .resetform{
-      @include form;
-     
-  .h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: $primary1color;
+
+  .resetform {
+    @include form;
+  }
+
+  .h1 {
+    @include h1;
     font-size: 32px;
-    margin-bottom: 16px;
-    color: #333;
-    padding: 24px;
-  
+    margin-bottom: 8px;
+    color: #fff;
+
+
   }
-  .label{
- @include label1
+
+  .label {
+    @include label1
   }
-  .input {
-    @include input
-     }
-   
-    .button{
-     @include button
+
+
+  .button {
+    @include button
+  }
+
+  .accountText {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #ddd;
+
+    .p2 {
+      display: inline;
+      margin-right: 8px;
     }
-    
-    
-     }}
+
+    .loginLink {
+      color: $Tertiarycolor;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .search {
+
+    position: relative;
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-end;
+
+    .icon {
+      position: absolute;
+      left: 1rem;
+      top: 35%;
+      transform: translateY(-50%);
+      color: #8a939b;
+
+    }
+
+
+
+    .input {
+      @include input;
+
+    }
+  }
+
+  @media (max-width: 700px) {
+    justify-content: center;
+    padding: 10px;
+
+    .signupform {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+
+    .signupform {
+      margin-top: 20px;
+    }
+  }
+}

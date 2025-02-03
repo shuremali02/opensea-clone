@@ -3,9 +3,9 @@
 
 .maincontainer {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
 
   .signupform {
     @include form;
@@ -26,31 +26,37 @@
 
     .label {
       @include label1;
-      width: 100%;
-      font-size: 14px;
-      color: #999;
-      margin-bottom: 8px;
+
+
     }
 
-    .input {
-      @include input;
-      background: #f4f4f4;
-      border-radius: 8px;
-      margin-bottom: 16px;
+    .search {
+
+      position: relative;
+      max-width: 900px;
+      display: flex;
+      justify-content: flex-end;
+
+      .icon {
+        position: absolute;
+        left: 1rem;
+        top: 35%;
+        transform: translateY(-50%);
+        color: #8a939b;
+
+      }
+
+
+
+      .input {
+        @include input;
+
+      }
     }
 
     .button {
       @include button;
-      background: #6a11cb;
-      color: #fff;
-      font-weight: bold;
-      margin-top: 16px;
-      border-radius: 24px;
-      text-transform: uppercase;
 
-      &:hover {
-        background: #5a0db2;
-      }
     }
 
     .orText {
@@ -110,7 +116,7 @@
       }
 
       .loginLink {
-        color: #6a11cb;
+        color: $Tertiarycolor;
         cursor: pointer;
 
         &:hover {
