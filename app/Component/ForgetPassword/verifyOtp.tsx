@@ -1,16 +1,10 @@
-"use client"
 import React from 'react';
 import Styles from "../../Styles/component/_verify.module.scss";
-
-import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Verify() {
-  const router = useRouter()
 
-  const handleClick = () => {
-    router.push("/ForgetPassword/ResetPassword")
-  }
   return (
     <div className={Styles.maincontainer}>
       <div>
@@ -34,7 +28,7 @@ export default function Verify() {
               <input className={Styles.input} type="text" placeholder="_" />
             </div>
           </div>
-          <button onClick={handleClick} className={Styles.button}>Verify</button>
+        <Link href={"/ForgetPassword/ResetPassword"}> <button className={Styles.button}>Verify</button></Link>
         </form>
         <div className={Styles.accountText}>
           <p className={Styles.p2}>Did you not receive a code?</p>
