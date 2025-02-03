@@ -1,99 +1,142 @@
-// SCSS Code for the Login Form 
 @import "/app/Styles/base/variables";
 @import "/app/Styles/base/mixins";
+
 .maincontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: $bgcolor;
-  
-     .signupform{
-    @include form;     
-     
-  .h1{
- @include h1
-  
-  }
-  .label{
-@include label1
-  }
-  .input {
-    @include input
-     }
-     p {
-      text-align: end;
-      font-size: 0.9rem;
-      color: #6a11cb;
-      cursor: pointer;
-      margin: 1rem 0;
-  
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+
+  .signupform {
+    @include form;
+
+    .h1 {
+      @include h1;
+      font-size: 32px;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .subheading {
+      font-size: 14px;
+      margin-bottom: 24px;
+      color: #ddd;
+      text-align: center;
+    }
+
+    .label {
+      @include label1;
+      width: 100%;
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 8px;
+    }
+
+    .input {
+      @include input;
+      background: #f4f4f4;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    .button {
+      @include button;
+      background: #6a11cb;
+      color: #fff;
+      font-weight: bold;
+      margin-top: 16px;
+      border-radius: 24px;
+      text-transform: uppercase;
+
       &:hover {
-        text-decoration: underline;
-      } 
+        background: #5a0db2;
+      }
     }
-    .button{
-    @include button
+
+    .orText {
+      margin: 16px 0;
+      font-size: 14px;
+      color: #999;
+      text-align: center;
     }
-    .icons{
+
+    .icons {
       display: flex;
-      justify-content: center;
-      gap: 16px;
-      margin: 16px;
       flex-direction: column;
-     
-      
+      gap: 12px;
+      width: 100%;
     }
+
     .iconsbutton {
-      display: flex; /* Flexbox use karein */
-      align-items: center; /* Vertical alignment */
+      display: flex;
+      align-items: center;
       background: #fff;
       width: 100%;
       color: #000;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
       padding: 12px;
       font-size: 16px;
-      text-align: left; /* Text left-align */
+      text-align: left;
       cursor: pointer;
-      gap: 10px; /* Icon aur text ke beech ka gap */
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Thoda shadow effect */
-   
-    
-    &:hover {
-      background: #f5f5f5; /* Hover effect */
+      gap: 12px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        background: #f5f5f5;
+      }
+    }
+
+    .icon1 {
+      color: #3b5998;
+    }
+
+    .icon2 {
+      color: #1da1f2;
+    }
+
+    .icon3 {
+      color: #db4437;
+    }
+
+    .accountText {
+      margin-top: 24px;
+      font-size: 14px;
+      color: #ddd;
+
+      p {
+        display: inline;
+        margin-right: 8px;
+      }
+
+      .loginLink {
+        color: #6a11cb;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
-    .icon1 {
-      color: #227;
-      font-size: 24px; /* Icon size */
+
+  // Media queries for responsiveness
+  @media (max-width: 700px) {
+    justify-content: center;
+    padding: 10px;
+
+    .signupform {
+      width: 100%;
+      max-width: 400px;
     }
-    
-    .icon2 {
-      color: #2575fc;
-      font-size: 24px; /* Icon size */
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+
+    .signupform {
+      margin-top: 20px;
     }
-    
-    .icon3 {
-      color: red;
-      font-size: 24px; /* Icon size */
-    }
-    
-    .p2{
-      padding-top: 48px;
-    }
-    
-    .button2{
-      display: flex;
-      flex-direction: row;
-    }
-    .button3{
-      background: transparent;
-      border: none;
-      &:hover{
-        color: #6a11cb;
-      }
-  
-    }
-    
-     }}
+  }
+}

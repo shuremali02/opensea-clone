@@ -6,8 +6,14 @@ import { TfiSearch } from "react-icons/tfi";
 import Styles from "@/app/Styles/component/_header.module.scss"; 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
+  const router =useRouter()
+    
+  const handleClick = () => {
+  router.push("/Login")
+  }
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -51,7 +57,7 @@ const Navbar = () => {
        
         <div className={Styles.actions}>
         <div>
-          <button className={Styles.loginbtn}><SiSimplelogin size={24}/> login</button>
+          <button onClick={handleClick} className={Styles.loginbtn}><SiSimplelogin size={24}/> login</button>
         </div>
           <button className={Styles.mobicon} ><TfiSearch size={24}/></button>
           <button className={Styles.actionbtn}>

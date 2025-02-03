@@ -1,84 +1,59 @@
-// SCSS Code for the Login Form
 @import "/app/Styles/base/variables";
 @import "/app/Styles/base/mixins";
 @import "../component/variables.scss";
+
 .logincontainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background:$bgcolor;
+  background: $primary1color;
 
-   .loginform{
+  .loginform {
     @include form;
-   
-.h1{
- @include h1
 
-}
-.label{
-@include label1
-}
-.input {
- @include input
-   }
-   .forget {
-    text-align: end;
-    border: none ;
-    background-color: transparent;
-    font-size: 0.9rem;
-    color: #6a11cb;
-    cursor: pointer;
-    margin: 1rem 0;
-    justify-items: end;
-
-    &:hover {
-      text-decoration: underline;
-    } 
-  }
-  .button{
-  @include button
-  }
-  .icons{
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin: 16px;
-    flex-direction: row;
-   
-    
-  }
-  .icon1{
-    background-color: #227;
-    color: #ddd;
-    height: 34px;
-    width: 34px;
-    border-radius: 50px;
-    text-align: center;
-  }
-  .icon2{
-    color: #2575fc;
-  }
-  .icon3{
-    color:red;
-    justify-content: center;
-    align-items: center;
-  }
-  .p2{
-    padding: 48px;
-  } 
-  .button2{
-    display: flex;
-    flex-direction: row;
-    padding: 32px;
-  }
-  .button3{
-    background: transparent;
-    border: none;
-    &:hover{
-      color: #6a11cb;
+    .h1 {
+      @include h1;
     }
 
+    .label {
+      @include label1;
+    }
+
+    .input {
+      @include input;
+    }
+
+    .forget {
+      text-align: end;
+      border: none;
+      background-color: transparent;
+      font-size: 0.9rem;
+      color: #6a11cb;
+      cursor: pointer;
+      margin: 1rem 0;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .button {
+      @include button;
+    }
+
+    .button2 {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      padding: 16px;
+    }
+
+    .button3 {
+      background: transparent;
+      border: none;
+      &:hover {
+        color: #6a11cb;
+      }
+    }
   }
-  
-   }}
+}

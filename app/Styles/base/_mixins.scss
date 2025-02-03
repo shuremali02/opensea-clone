@@ -1,53 +1,62 @@
-@mixin button{
-    align-items: center;
-    background:$bgcolor;
-    width: 100%;
-    color: white;
-    border: none;
-    border-radius: 16px;
-    padding: 12px;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 16px;
+// Updated Mixins File
+@mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6a11cb; // Update to match your button color
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 16px;
 
-    &:hover{
-      opacity: 0.9;
-
-}
-}
- @mixin input {
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid #000;
-    padding: 8px;
-    font-size: 16px;
-    margin-bottom: 16px;
-  
-    &:focus {
-      outline: none;
-      border-bottom: 2px solid #6a11cb;
-    }
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
-@mixin form{
-    display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: white;
-      border: 1 px solid #ddd;
-      border-radius: 10px;
-      padding:32px ;
-      width: 90%;
-      max-width: 400px;
+@mixin input {
+  width: 100%;
+  border: 1px solid #ccc; // Adjusted for clear visuals
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 16px;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #6a11cb; // Match design
+  }
 }
 
-@mixin h1{
-    font-size: 32px;
-    margin-bottom: 48px;
-    color: #333;
+@mixin form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  padding: 16px;
+  width: 90%;
+  max-width: 400px;
 }
+
+@mixin h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+@mixin label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
 @mixin label1{
     font-size: 16px;
     color: #555;
