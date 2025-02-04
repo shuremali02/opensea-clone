@@ -28,11 +28,12 @@
   background: $secondarycolor;
   margin-bottom: 16px;
   border: 1px solid $Tertiarycolor;
+ color:white;
 
 
   &:focus {
     outline: none;
-    color: #7e2aeb;
+  
 
   }
 }

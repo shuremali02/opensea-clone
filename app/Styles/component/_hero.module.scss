@@ -1,159 +1,128 @@
 @import "/app/Styles/base/variables";
+
 .heroSection {
     margin: 1.5rem;
     padding: 2rem 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-  
+  align-items: center;
+
     .container {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-      gap: 2.5rem;
-   
-  
-      @media (min-width: 768px) {
-        flex-direction: row;
-      }
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2.5rem;
+        justify-content: center;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
     }
-  
+
     .imageContainer {
-      flex: 1;
-      text-align: center;
-  
-      .image {
-        max-width: 100%;
-        border-radius: 16px;
-      }
+        flex: 1;
+        text-align: center;
+
+        .image {
+            max-width: 100%;
+            border-radius: 16px;
+        }
     }
-  
+
     .content {
-      flex: 1;
-      align-items: center;
-      justify-content: center;
-      text-align: justify;
-    
-  
-      @media (min-width: 768px) {
-        text-align: left;
-      }
-  
-      .title {
-        font-size: 2rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-      }
-  
-      .description {
-        margin-bottom: 1rem;
-        color: white;
-      }
-      .note {
-        font-size: 0.875rem;
-        color: #999;
-      }
-  
-      .buttonsContainer {
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+
+        @media (min-width: 768px) {
+            text-align: left;
+        }
+
+        .title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .note {
+            font-size: 0.875rem;
+            color: #999;
+        }
+
+        .buttonsContainer {
+            display: flex;
+            gap: 1rem;
+
+            .secondaryButton {
+                display: flex;
+                align-items: center;
+                padding: 0.5rem 1rem;
+                background: #f1f1f1;
+                border-radius: 0.5rem;
+                border: none;
+
+                &:hover {
+                    background: #e2e2e2;
+                }
+
+                .icon {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+
+        @media (max-width: 767px) {
+            .title,
+            .description,
+            .note,
+            .cta {
+                padding: 0 1rem;
+            }
+        }
+    }
+
+    .cta {
+        margin-top: 1.5rem;
         display: flex;
         gap: 1rem;
-  
+
+        .primaryButton {
+            background-color: $Tertiarycolor;
+            color: #111;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: $Tertiarycolor 0.3s;
+
+            &:hover {
+                background-color: #7e2aeb;
+            }
+        }
+
         .secondaryButton {
-          display: flex;
-          align-items: center;
-          padding: 0.5rem 1rem;
-          background: #f1f1f1;
-          border-radius: 0.5rem;
-          border: none;
-  
-          &:hover {
-            background: #e2e2e2;
-          }
-  
-          .icon {
-            width: 1.5rem;
-            height: 1.5rem;
-          }
+            background-color: #333;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid $Tertiarycolor;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #444;
+                border-color: #7e2aeb;
+            }
         }
-      }
-
     }
-    .cta {
-  margin-top: 1.5rem;
-  display: flex;
-  
-  gap: 1rem;
-
-  .primaryButton {
-    background-color: $Tertiarycolor;
-    color: #111;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: $Tertiarycolor 0.3s;
-
-    &:hover {
-      background-color: #7e2aeb;
-    }
-  }
-
-  .secondaryButton {
-    background-color: #333;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    border: 1px solid $Tertiarycolor;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    
-
-    &:hover {
-      background-color: #444;
-      border-color: #7e2aeb;
-    }
-    .cta {
-      margin-top: 1.5rem;
-      display: flex;
-      gap: 1rem;
-    
-      .primaryButton {
-        background-color: #ffcc00;
-        color: #111;
-        padding: 0.75rem 1.5rem;
-        border: none;
-        border-radius: 8px;
-        font-size: 1rem;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background 0.3s;
-    
-        &:hover {
-          background-color: #ffaa00;
-        }
-      }
-    
-      .secondaryButton {
-        background-color: #333;
-        color: #fff;
-        padding: 0.75rem 1.5rem;
-        border: 1px solid #ffcc00;
-        border-radius: 8px;
-        font-size: 1rem;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background 0.3s;
-    
-        &:hover {
-          background-color: #444;
-          border-color: $Tertiarycolor;
-        }
-      }
-    }
-  }
 }
-  }
-  
