@@ -1,6 +1,7 @@
 import styles from "../Styles/component/_footer.module.scss";
 import { FaTwitter, FaInstagram, FaDiscord, FaReddit, FaYoutube, FaTiktok, FaEnvelope } from "react-icons/fa";
 import Button, { Type } from "./button";
+import { MdOutlineMail } from "react-icons/md";
 
 const Footer = () => {
   const buttons:Type[]=[
@@ -24,8 +25,15 @@ const Footer = () => {
             and tips and tricks for navigating OpenSea.
           </p>
           <div className={styles.signup}>
-            <input type="email" placeholder="Your email address" />
-            <button>Sign up</button>
+          <div className={styles.search}>
+              <MdOutlineMail className={styles.icon} size={20} />
+              <input
+                className={styles.input}
+                type="email"
+                placeholder="Email Address"
+              />
+            </div>
+            <button >Sign up</button>
           </div>
         </div>
 

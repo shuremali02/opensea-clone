@@ -1,4 +1,5 @@
 @import "/app/Styles/base/variables";
+@import "/app/Styles/base/mixins";
 .footer {
   background-color: #3B3B3B;
   color: white;
@@ -52,22 +53,38 @@
         align-items: center;
       }
 
-      input {
-        flex: 1;
-        padding: 12px;
-        border: 1px solid $Tertiarycolor;
-        border-radius: 5px;
-        width: 100%;
-        max-width: 300px;
+     
+    .search {
+
+      position: relative;
+      max-width: 600px;
+      display: flex;
+      justify-content: flex-end;
+
+      .icon {
+        position: absolute;
+        left: 1rem;
+        top: 35%;
+        transform: translateY(-50%);
+        color: #8a939b;
+
       }
 
+
+
+      .input {
+        @include input;
+
+      }
+    }
+
       button {
-        padding: 12px 15px;
+        padding: 8px 12px;
         background-color: $Tertiarycolor;
         color: black;
         font-weight: bold;
         border: none;
-        border-radius: 5px;
+        border-radius: 8px;
         cursor: pointer;
         transition: background-color 0.3s;
 
